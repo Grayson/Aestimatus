@@ -711,9 +711,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5l-is-lkG">
-                                <rect key="frame" x="0.0" y="110" width="480" height="160"/>
+                                <rect key="frame" x="0.0" y="61" width="480" height="209"/>
                                 <clipView key="contentView" drawsBackground="NO" id="6Mq-QI-7FB">
-                                    <rect key="frame" x="1" y="1" width="478" height="158"/>
+                                    <rect key="frame" x="1" y="1" width="478" height="207"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView selectable="YES" id="qGY-MW-8q6">
@@ -736,11 +736,42 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0CA-fM-UVp">
+                                <rect key="frame" x="386" y="13" width="80" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reveal" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="e53-ER-wtm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="reveal:" target="5gI-5U-AMq" id="Zrh-3c-GSe"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NbB-HY-hXq">
+                                <rect key="frame" x="318" y="13" width="68" height="32"/>
+                                <buttonCell key="cell" type="push" title="Hide" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZiJ-2x-oBQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="hide:" target="5gI-5U-AMq" id="amh-AI-HuL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="A5l-is-lkG" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="2a4-la-jeW"/>
-                            <constraint firstAttribute="bottom" secondItem="A5l-is-lkG" secondAttribute="bottom" constant="110" id="dd0-rz-T7x"/>
+                            <constraint firstAttribute="trailing" secondItem="0CA-fM-UVp" secondAttribute="trailing" constant="20" id="KJX-6v-gRl"/>
+                            <constraint firstItem="NbB-HY-hXq" firstAttribute="top" secondItem="A5l-is-lkG" secondAttribute="bottom" constant="20" id="N3v-cb-dVs"/>
+                            <constraint firstAttribute="bottom" secondItem="0CA-fM-UVp" secondAttribute="bottom" constant="20" id="P41-LL-xCA"/>
+                            <constraint firstItem="0CA-fM-UVp" firstAttribute="top" secondItem="A5l-is-lkG" secondAttribute="bottom" constant="20" id="Rmz-4m-VQm"/>
+                            <constraint firstItem="0CA-fM-UVp" firstAttribute="leading" secondItem="NbB-HY-hXq" secondAttribute="trailing" constant="12" id="bOn-vv-h17"/>
                             <constraint firstItem="A5l-is-lkG" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="e3Z-UC-tHY"/>
+                            <constraint firstAttribute="bottom" secondItem="NbB-HY-hXq" secondAttribute="bottom" constant="20" id="ldH-eQ-4oG"/>
                             <constraint firstAttribute="trailing" secondItem="A5l-is-lkG" secondAttribute="trailing" id="tEm-6H-ljd"/>
                         </constraints>
                     </view>

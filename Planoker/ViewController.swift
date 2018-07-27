@@ -19,6 +19,12 @@ class ViewController: NSViewController {
 		}
 	}
 
+	@IBAction public func reveal(_ sender: AnyObject?) {
+	}
+
+	@IBAction public func hide(_ sender: AnyObject?) {
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		representedObject = ConventionalDeckSet()
