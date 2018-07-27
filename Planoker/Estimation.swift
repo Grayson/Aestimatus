@@ -14,10 +14,16 @@ private enum Keys: String {
 	case notes = "notes"
 }
 
-internal final class Estimation: NSCoding {
+internal final class Estimation: NSObject, NSCoding {
 	public let deckSetIdentifier: String
 	public let estimationIdentifier: UInt16
 	public let notes: String
+
+	public init(deckSetIdentifier: String, estimationIdentifier: UInt16, notes: String) {
+		self.deckSetIdentifier = deckSetIdentifier
+		self.estimationIdentifier = estimationIdentifier
+		self.notes = notes
+	}
 
 	public func encode(with aCoder: NSCoder) {
 		aCoder.encode(deckSetIdentifier, forKey: Keys.deckSet.rawValue)

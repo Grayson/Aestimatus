@@ -1,5 +1,5 @@
 //
-//  Session.swift
+//  EstimationSession.swift
 //  Planoker
 //
 //  Created by Grayson Hansard on 7/25/18.
@@ -8,8 +8,11 @@
 
 import Foundation
 
-internal final class Session: NSCoding {
-	public let estimations: [Estimation]
+internal final class EstimationSession: NSObject, NSCoding {
+	public var estimations: [Estimation] = []
+
+	public override init() {
+	}
 
 	public func encode(with aCoder: NSCoder) {
 		aCoder.encode(estimations, forKey: "estimations")

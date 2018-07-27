@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DeckSetCollectionViewController.swift
 //  Planoker
 //
 //  Created by Grayson Hansard on 7/25/18.
@@ -8,9 +8,11 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class DeckSetCollectionViewController: NSViewController {
 	private let collectionViewDataSource = DeckSetCollectionViewDataSource()
 	private let collectionViewDelegate = DeckSetCollectionViewDelegate()
+
+	public var session = EstimationSession()
 
 	@IBOutlet public var collectionView: NSCollectionView? {
 		didSet {
@@ -20,6 +22,17 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction public func reveal(_ sender: AnyObject?) {
+		guard
+			let selectedIndexes = collectionView?.selectionIndexes,
+			let firstIndex = selectedIndexes.first,
+			let deckSet = representedObject as AnyObject as? DeckSet
+		else { return }
+
+		let selectedEstimation = deckSet.possibleEstimations[firstIndex]
+		let estimation = Estimation(deckSetIdentifier: deckSet.identifier, estimationIdentifier: selectedEstimation.identifier, notes: "")
+		session.estimations.append(estimation)
+
+		// TODO: Add reveal UI
 	}
 
 	@IBAction public func hide(_ sender: AnyObject?) {
