@@ -38,7 +38,7 @@ internal final class Estimation: NSObject, NSCoding {
 		guard
 			let deckSet = aDecoder.decodeObject(forKey: Keys.deckSet.rawValue) as? String,
 			let notes = aDecoder.decodeObject(forKey: Keys.notes.rawValue) as? String,
-			let timestamp = aDecoder.decodeObject(forKey: Keys.timestamp.timestamp) as? Date
+			let timestamp = aDecoder.decodeObject(forKey: Keys.timestamp.rawValue) as? Date
 			else { return nil }
 		let estimationIdentifier = aDecoder.decodeInt32(forKey: Keys.estimation.rawValue)
 		self.deckSetIdentifier = deckSet
