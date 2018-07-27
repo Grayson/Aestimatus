@@ -10,9 +10,10 @@ import Foundation
 
 internal final class EstimationSession: NSObject, NSCoding {
 	public var estimations: [Estimation] = []
-	private let start = Date()
+	private let start: Date
 
 	public override init() {
+		start = Date()
 	}
 
 	public func encode(with aCoder: NSCoder) {
@@ -26,5 +27,6 @@ internal final class EstimationSession: NSObject, NSCoding {
 			let start = aDecoder.decodeObject(forKey: "start") as? Date
 			else { return nil }
 		self.estimations = estimations
+		self.start = start
 	}
 }
