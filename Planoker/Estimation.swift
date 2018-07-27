@@ -19,12 +19,13 @@ internal final class Estimation: NSObject, NSCoding {
 	public let deckSetIdentifier: String
 	public let estimationIdentifier: UInt16
 	public let notes: String
-	public let timestamp = Date()
+	public let timestamp: Date
 
 	public init(deckSetIdentifier: String, estimationIdentifier: UInt16, notes: String) {
 		self.deckSetIdentifier = deckSetIdentifier
 		self.estimationIdentifier = estimationIdentifier
 		self.notes = notes
+		self.timestamp = Date()
 	}
 
 	public func encode(with aCoder: NSCoder) {
