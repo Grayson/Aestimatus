@@ -14,6 +14,15 @@
 		1D766FAA21095C9C0083EF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D766FA821095C9C0083EF42 /* Main.storyboard */; };
 		1D766FB621095C9C0083EF42 /* PlanokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FB521095C9C0083EF42 /* PlanokerTests.swift */; };
 		1D766FC121095C9C0083EF42 /* PlanokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FC021095C9C0083EF42 /* PlanokerUITests.swift */; };
+		1D766FCF21095F050083EF42 /* DeckSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FCE21095F050083EF42 /* DeckSet.swift */; };
+		1D766FD121095F380083EF42 /* Estimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD021095F380083EF42 /* Estimation.swift */; };
+		1D766FD321095F410083EF42 /* PossibleEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD221095F410083EF42 /* PossibleEstimation.swift */; };
+		1D766FD52109607F0083EF42 /* ConventionalDeckSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD42109607F0083EF42 /* ConventionalDeckSet.swift */; };
+		1D766FD7210962D90083EF42 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD6210962D90083EF42 /* Session.swift */; };
+		1DA5C9C8210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C9C7210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift */; };
+		1DA5C9CA210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C9C9210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift */; };
+		1DA5C9CC210AAE2C0032EEBE /* CardCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C9CB210AAE2C0032EEBE /* CardCollectionViewItem.swift */; };
+		1DA5C9CE210AB3CC0032EEBE /* CardCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA5C9CD210AB3CC0032EEBE /* CardCollectionViewItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,15 @@
 		1D766FBC21095C9C0083EF42 /* PlanokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D766FC021095C9C0083EF42 /* PlanokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanokerUITests.swift; sourceTree = "<group>"; };
 		1D766FC221095C9C0083EF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D766FCE21095F050083EF42 /* DeckSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSet.swift; sourceTree = "<group>"; };
+		1D766FD021095F380083EF42 /* Estimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimation.swift; sourceTree = "<group>"; };
+		1D766FD221095F410083EF42 /* PossibleEstimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleEstimation.swift; sourceTree = "<group>"; };
+		1D766FD42109607F0083EF42 /* ConventionalDeckSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConventionalDeckSet.swift; sourceTree = "<group>"; };
+		1D766FD6210962D90083EF42 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1DA5C9C7210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSetCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		1DA5C9C9210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSetCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		1DA5C9CB210AAE2C0032EEBE /* CardCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewItem.swift; sourceTree = "<group>"; };
+		1DA5C9CD210AB3CC0032EEBE /* CardCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +123,15 @@
 				1D766FA821095C9C0083EF42 /* Main.storyboard */,
 				1D766FAB21095C9C0083EF42 /* Info.plist */,
 				1D766FAC21095C9C0083EF42 /* Planoker.entitlements */,
+				1D766FCE21095F050083EF42 /* DeckSet.swift */,
+				1D766FD021095F380083EF42 /* Estimation.swift */,
+				1D766FD221095F410083EF42 /* PossibleEstimation.swift */,
+				1D766FD42109607F0083EF42 /* ConventionalDeckSet.swift */,
+				1D766FD6210962D90083EF42 /* Session.swift */,
+				1DA5C9C7210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift */,
+				1DA5C9C9210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift */,
+				1DA5C9CB210AAE2C0032EEBE /* CardCollectionViewItem.swift */,
+				1DA5C9CD210AB3CC0032EEBE /* CardCollectionViewItem.xib */,
 			);
 			path = Planoker;
 			sourceTree = "<group>";
@@ -195,6 +222,14 @@
 				TargetAttributes = {
 					1D766F9C21095C950083EF42 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					1D766FB021095C9C0083EF42 = {
 						CreatedOnToolsVersion = 10.0;
@@ -231,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA5C9CE210AB3CC0032EEBE /* CardCollectionViewItem.xib in Resources */,
 				1D766FA721095C9C0083EF42 /* Assets.xcassets in Resources */,
 				1D766FAA21095C9C0083EF42 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +296,14 @@
 				1D766FA321095C950083EF42 /* ViewController.swift in Sources */,
 				1D766FA121095C950083EF42 /* AppDelegate.swift in Sources */,
 				1D766FA521095C950083EF42 /* Document.swift in Sources */,
+				1D766FD121095F380083EF42 /* Estimation.swift in Sources */,
+				1D766FD7210962D90083EF42 /* Session.swift in Sources */,
+				1D766FCF21095F050083EF42 /* DeckSet.swift in Sources */,
+				1D766FD52109607F0083EF42 /* ConventionalDeckSet.swift in Sources */,
+				1DA5C9CA210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift in Sources */,
+				1DA5C9CC210AAE2C0032EEBE /* CardCollectionViewItem.swift in Sources */,
+				1D766FD321095F410083EF42 /* PossibleEstimation.swift in Sources */,
+				1DA5C9C8210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

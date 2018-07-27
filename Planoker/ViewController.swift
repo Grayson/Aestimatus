@@ -9,19 +9,26 @@
 import Cocoa
 
 class ViewController: NSViewController {
+	private let collectionViewDataSource = DeckSetCollectionViewDataSource()
+	private let collectionViewDelegate = DeckSetCollectionViewDelegate()
+
+	@IBOutlet public var collectionView: NSCollectionView? {
+		didSet {
+			collectionView?.dataSource = collectionViewDataSource
+			collectionView?.delegate = collectionViewDelegate
+		}
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		// Do any additional setup after loading the view.
+		representedObject = ConventionalDeckSet()
 	}
 
 	override var representedObject: Any? {
 		didSet {
-		// Update the view, if already loaded.
+			collectionViewDataSource.deckSet = representedObject as AnyObject as? DeckSet
+			collectionView?.reloadData()
 		}
 	}
-
-
 }
 
