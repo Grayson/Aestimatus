@@ -23,7 +23,7 @@ private func foo(color: NSColor) -> NSColor {
 }
 
 @IBDesignable
-internal final class BasicCardView: NSView {
+internal final class BasicCardView: NSView, CALayerDelegate {
 	@IBInspectable public var borderTopColor: NSColor?
 	@IBInspectable public var borderBottomColor: NSColor?
 
@@ -32,19 +32,60 @@ internal final class BasicCardView: NSView {
 
 	@IBInspectable public var cornerRadius: CGFloat = 5.0
 
-	override func draw(_ dirtyRect: NSRect) {
-		guard let context = NSGraphicsContext.current?.cgContext else { return }
-		context.saveGState()
+	private let cardLayer = CALayer()
 
-		let borderTopColor = self.borderTopColor ?? NSColor.white
-		let backgroundTopColor = self.backgroundTopColor ?? NSColor.systemOrange
+	override init(frame frameRect: NSRect) {
+		super.init(frame: frameRect)
+		setupLayer()
+	}
 
-		let bottomBorderColor = borderBottomColor ?? foo(color: borderTopColor)
-		let bottomBackgroundColor = backgroundBottomColor ?? foo(color: backgroundTopColor)
+	required init?(coder decoder: NSCoder) {
+		super.init(coder: decoder)
+		setupLayer()
+	}
 
-		drawRoundedRect(in: context, rect: frame, withCornerRadius: cornerRadius, gradientStartColor: borderTopColor.cgColor, gradientEndColor: bottomBorderColor.cgColor)
-		drawRoundedRect(in: context, rect: NSInsetRect(frame, cornerRadius, cornerRadius), withCornerRadius: cornerRadius, gradientStartColor: backgroundTopColor.cgColor, gradientEndColor: bottomBackgroundColor.cgColor)
+	func draw(_ layer: CALayer, in context: CGContext) {
+		switch layer {
+		case cardLayer:
+			let borderTopColor = self.borderTopColor ?? NSColor.white
+			let backgroundTopColor = self.backgroundTopColor ?? NSColor.systemOrange
 
-		context.restoreGState()
+			let bottomBorderColor = borderBottomColor ?? foo(color: borderTopColor)
+			let bottomBackgroundColor = backgroundBottomColor ?? foo(color: backgroundTopColor)
+
+			drawRoundedRect(in: context, rect: cardLayer.bounds, withCornerRadius: cornerRadius, gradientStartColor: borderTopColor.cgColor, gradientEndColor: bottomBorderColor.cgColor)
+			drawRoundedRect(in: context, rect: NSInsetRect(cardLayer.bounds, cornerRadius, cornerRadius), withCornerRadius: cornerRadius, gradientStartColor: backgroundTopColor.cgColor, gradientEndColor: bottomBackgroundColor.cgColor)
+		default:
+			break
+		}
+	}
+
+	func layoutSublayers(of layer: CALayer) {
+		guard layer == self.layer else { return }
+		let frame = layer.frame
+
+		let cardHeightToWidthRatio: CGFloat = 1.4
+		let cardWidthToHeightRatio: CGFloat = 1.0 / cardHeightToWidthRatio
+		let heightBasedOnWidth = frame.width * cardHeightToWidthRatio
+		let finalHeight = floor(heightBasedOnWidth <= frame.height ? heightBasedOnWidth : frame.height)
+		let finalWidth = floor(finalHeight == frame.height ? frame.height * cardWidthToHeightRatio : frame.width)
+
+		let x: CGFloat = floor((layer.frame.width - finalWidth) / 2.0)
+		let cardFrame = CGRect(x: x, y: 0.0, width: finalWidth, height: finalHeight)
+
+		cardLayer.frame = cardFrame
+	}
+
+	private func setupLayer() {
+		let layer: CALayer = {
+			if nil == self.layer {
+				self.layer = CALayer()
+				self.layer!.delegate = self
+			}
+			return self.layer!
+		}()
+		layer.addSublayer(cardLayer)
+		cardLayer.delegate = self
+		cardLayer.setNeedsDisplay()
 	}
 }
