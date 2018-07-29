@@ -18,7 +18,7 @@ func drawRoundedRect(in context: CGContext, rect: CGRect, withCornerRadius corne
 	context.drawLinearGradient(gradient, start: gradientStart, end: gradientEnd, options: [])
 }
 
-private func foo(color: NSColor) -> NSColor {
+private func darkenColor(color: NSColor) -> NSColor {
 	return color.blended(withFraction: 0.5, of: NSColor.black) ?? color
 }
 
@@ -50,8 +50,8 @@ internal final class BasicCardView: NSView, CALayerDelegate {
 			let borderTopColor = self.borderTopColor ?? NSColor.white
 			let backgroundTopColor = self.backgroundTopColor ?? NSColor.systemOrange
 
-			let bottomBorderColor = borderBottomColor ?? foo(color: borderTopColor)
-			let bottomBackgroundColor = backgroundBottomColor ?? foo(color: backgroundTopColor)
+			let bottomBorderColor = borderBottomColor ?? darkenColor(color: borderTopColor)
+			let bottomBackgroundColor = backgroundBottomColor ?? darkenColor(color: backgroundTopColor)
 
 			drawRoundedRect(in: context, rect: cardLayer.bounds, withCornerRadius: cornerRadius, gradientStartColor: borderTopColor.cgColor, gradientEndColor: bottomBorderColor.cgColor)
 			drawRoundedRect(in: context, rect: NSInsetRect(cardLayer.bounds, cornerRadius, cornerRadius), withCornerRadius: cornerRadius, gradientStartColor: backgroundTopColor.cgColor, gradientEndColor: bottomBackgroundColor.cgColor)
