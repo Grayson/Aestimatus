@@ -19,6 +19,7 @@
 		1D766FD321095F410083EF42 /* PossibleEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD221095F410083EF42 /* PossibleEstimation.swift */; };
 		1D766FD52109607F0083EF42 /* ConventionalDeckSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD42109607F0083EF42 /* ConventionalDeckSet.swift */; };
 		1D766FD7210962D90083EF42 /* EstimationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD6210962D90083EF42 /* EstimationSession.swift */; };
+		1D9002FE210DF949000E9782 /* BasicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9002FD210DF949000E9782 /* BasicCardView.swift */; };
 		1DA5C9C8210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C9C7210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift */; };
 		1DA5C9CA210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C9C9210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift */; };
 		1DA5C9CC210AAE2C0032EEBE /* CardCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C9CB210AAE2C0032EEBE /* CardCollectionViewItem.swift */; };
@@ -63,6 +64,7 @@
 		1D766FD221095F410083EF42 /* PossibleEstimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleEstimation.swift; sourceTree = "<group>"; };
 		1D766FD42109607F0083EF42 /* ConventionalDeckSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConventionalDeckSet.swift; sourceTree = "<group>"; };
 		1D766FD6210962D90083EF42 /* EstimationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimationSession.swift; sourceTree = "<group>"; };
+		1D9002FD210DF949000E9782 /* BasicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCardView.swift; sourceTree = "<group>"; };
 		1DA5C9C7210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSetCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		1DA5C9C9210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSetCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		1DA5C9CB210AAE2C0032EEBE /* CardCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewItem.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				1DA5C9CD210AB3CC0032EEBE /* CardCollectionViewItem.xib */,
 				1DA5C9CF210B425E0032EEBE /* DisplayWindowViewController.swift */,
 				1DA5C9D1210D33DC0032EEBE /* cardview.playground */,
+				1D9002FD210DF949000E9782 /* BasicCardView.swift */,
 			);
 			path = Planoker;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				1D766FCF21095F050083EF42 /* DeckSet.swift in Sources */,
 				1D766FD52109607F0083EF42 /* ConventionalDeckSet.swift in Sources */,
 				1DA5C9D0210B425E0032EEBE /* DisplayWindowViewController.swift in Sources */,
+				1D9002FE210DF949000E9782 /* BasicCardView.swift in Sources */,
 				1DA5C9CA210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift in Sources */,
 				1DA5C9CC210AAE2C0032EEBE /* CardCollectionViewItem.swift in Sources */,
 				1D766FD321095F410083EF42 /* PossibleEstimation.swift in Sources */,

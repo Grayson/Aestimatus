@@ -17,8 +17,11 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="1QX-oM-FXI" customClass="BasicCardView" customModule="Planoker" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ov5-RF-uE6">
-                    <rect key="frame" x="209" y="118" width="64" height="37"/>
+                    <rect key="frame" x="208" y="118" width="64" height="37"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="qfZ-Z7-cpw">
                         <font key="font" size="26" name=".SFNSDisplay"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -27,8 +30,12 @@
                 </textField>
             </subviews>
             <constraints>
+                <constraint firstItem="1QX-oM-FXI" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="93q-am-2p5"/>
                 <constraint firstItem="Ov5-RF-uE6" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="J48-oI-twR"/>
+                <constraint firstAttribute="bottom" secondItem="1QX-oM-FXI" secondAttribute="bottom" id="LG3-Wt-BTB"/>
                 <constraint firstItem="Ov5-RF-uE6" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Sbm-6s-SE8"/>
+                <constraint firstItem="1QX-oM-FXI" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="bni-On-peS"/>
+                <constraint firstAttribute="trailing" secondItem="1QX-oM-FXI" secondAttribute="trailing" id="vHD-EQ-Zdg"/>
             </constraints>
         </customView>
         <collectionViewItem id="rRz-ue-TA3" customClass="CardCollectionViewItem" customModule="Planoker" customModuleProvider="target">
