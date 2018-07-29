@@ -700,7 +700,7 @@
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="159" y="234"/>
         </scene>
         <!--Deck Set Collection View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -781,7 +781,59 @@ Gw
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="159" y="627"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="lH4-lM-MsU">
+            <objects>
+                <windowController storyboardIdentifier="DisplayWindow" id="5cx-XL-kXg" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="ox5-Wp-HOK">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="163" y="208" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+                        <connections>
+                            <outlet property="delegate" destination="5cx-XL-kXg" id="Fvy-UD-tRV"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="8fL-ic-l4v" kind="relationship" relationship="window.shadowedContentViewController" id="KwM-Oo-QLv"/>
+                    </connections>
+                </windowController>
+                <customObject id="A6s-55-5Xf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="234"/>
+        </scene>
+        <!--Display Window View Controller-->
+        <scene sceneID="0xH-bJ-qDZ">
+            <objects>
+                <viewController id="8fL-ic-l4v" customClass="DisplayWindowViewController" customModule="Planoker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="U1S-1P-hHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Em1-Nl-tGh">
+                                <rect key="frame" x="20" y="154" width="163" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="PAw-G1-jhR"/>
+                                    <constraint firstAttribute="height" constant="96" id="Q2I-pd-p27"/>
+                                    <constraint firstAttribute="width" constant="163" id="eeY-4C-tnE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="f3W-dl-PYf"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Em1-Nl-tGh" firstAttribute="top" secondItem="U1S-1P-hHZ" secondAttribute="top" constant="20" id="ZQj-5Q-GuP"/>
+                            <constraint firstItem="Em1-Nl-tGh" firstAttribute="leading" secondItem="U1S-1P-hHZ" secondAttribute="leading" constant="20" id="lzy-aK-QTa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoHostView" destination="Em1-Nl-tGh" id="2Xb-DK-szI"/>
+                    </connections>
+                </viewController>
+                <customObject id="p5F-bm-djB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="627"/>
         </scene>
     </scenes>
 </document>
