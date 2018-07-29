@@ -22,6 +22,17 @@ private func darkenColor(color: NSColor) -> NSColor {
 	return color.blended(withFraction: 0.5, of: NSColor.black) ?? color
 }
 
+private func calculateCardFrame(in frame: CGRect) -> CGRect {
+	let cardHeightToWidthRatio: CGFloat = 1.4
+	let cardWidthToHeightRatio: CGFloat = 1.0 / cardHeightToWidthRatio
+	let heightBasedOnWidth = frame.width * cardHeightToWidthRatio
+	let finalHeight = floor(heightBasedOnWidth <= frame.height ? heightBasedOnWidth : frame.height)
+	let finalWidth = floor(finalHeight == frame.height ? frame.height * cardWidthToHeightRatio : frame.width)
+
+	let x: CGFloat = floor((frame.width - finalWidth) / 2.0)
+	return CGRect(x: x, y: 0.0, width: finalWidth, height: finalHeight)
+}
+
 @IBDesignable
 internal final class BasicCardView: NSView, CALayerDelegate {
 	@IBInspectable public var borderTopColor: NSColor?
@@ -64,16 +75,7 @@ internal final class BasicCardView: NSView, CALayerDelegate {
 		guard layer == self.layer else { return }
 		let frame = layer.frame
 
-		let cardHeightToWidthRatio: CGFloat = 1.4
-		let cardWidthToHeightRatio: CGFloat = 1.0 / cardHeightToWidthRatio
-		let heightBasedOnWidth = frame.width * cardHeightToWidthRatio
-		let finalHeight = floor(heightBasedOnWidth <= frame.height ? heightBasedOnWidth : frame.height)
-		let finalWidth = floor(finalHeight == frame.height ? frame.height * cardWidthToHeightRatio : frame.width)
-
-		let x: CGFloat = floor((layer.frame.width - finalWidth) / 2.0)
-		let cardFrame = CGRect(x: x, y: 0.0, width: finalWidth, height: finalHeight)
-
-		cardLayer.frame = cardFrame
+		cardLayer.frame = calculateCardFrame(in: frame)
 	}
 
 	private func setupLayer() {
