@@ -33,6 +33,31 @@ private func calculateCardFrame(in frame: CGRect) -> CGRect {
 	return CGRect(x: x, y: 0.0, width: finalWidth, height: finalHeight)
 }
 
+private func calculateFrame(for attributedString: NSAttributedString, in rect: CGRect) -> CGRect {
+	let framesetter = CTFramesetterCreateWithAttributedString(attributedString)
+	var fitRange = CFRange()
+	let suggestedSize = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRange(), nil, rect.size, &fitRange)
+
+	let x = (rect.size.width - suggestedSize.width) / 2.0 + rect.origin.x
+	let y = (rect.size.height - suggestedSize.height) / 2.0 + rect.origin.y
+
+	return CGRect(x: x, y: y, width: suggestedSize.width, height: suggestedSize.height)
+}
+
+private func attributedString(from layer: CATextLayer) -> NSAttributedString {
+	if let attrStr = layer.string as? NSAttributedString {
+		return attrStr
+	}
+
+	guard
+		let font = layer.font as? NSFont,
+		let string = layer.string as? String
+		else { assert(false) }
+
+	let attributes = [ NSAttributedString.Key.font: font ]
+	return NSAttributedString(string: string, attributes: attributes)
+}
+
 @IBDesignable
 internal final class BasicCardView: NSView, CALayerDelegate {
 	@IBInspectable public var borderTopColor: NSColor?
@@ -43,7 +68,26 @@ internal final class BasicCardView: NSView, CALayerDelegate {
 
 	@IBInspectable public var cornerRadius: CGFloat = 5.0
 
+	@IBInspectable public var font: NSFont? {
+		didSet {
+			textLayer.font = font
+		}
+	}
+
+	@IBInspectable public var textColor: NSColor? {
+		didSet {
+			textLayer.foregroundColor = textColor?.cgColor
+		}
+	}
+
+	@IBInspectable public var text: String = "0" {
+		didSet {
+			textLayer.string = text
+		}
+	}
+
 	private let cardLayer = CALayer()
+	private let textLayer = CATextLayer()
 
 	override init(frame frameRect: NSRect) {
 		super.init(frame: frameRect)
@@ -76,6 +120,7 @@ internal final class BasicCardView: NSView, CALayerDelegate {
 		let frame = layer.frame
 
 		cardLayer.frame = calculateCardFrame(in: frame)
+		textLayer.frame = calculateFrame(for: attributedString(from: textLayer), in: frame)
 	}
 
 	private func setupLayer() {
@@ -89,5 +134,9 @@ internal final class BasicCardView: NSView, CALayerDelegate {
 		layer.addSublayer(cardLayer)
 		cardLayer.delegate = self
 		cardLayer.setNeedsDisplay()
+
+		layer.addSublayer(textLayer)
+		textLayer.string = text
+		textLayer.setNeedsDisplay()
 	}
 }
