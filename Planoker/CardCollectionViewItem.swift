@@ -9,6 +9,15 @@
 import Cocoa
 
 internal final class CardCollectionViewItem: NSCollectionViewItem {
+	private static let selectedBorderColor = NSColor.selectedControlColor
+	private static let normalBorderColor = NSColor.controlBackgroundColor
+
+	@IBOutlet public var cardView: BasicCardView?
+
+	override func awakeFromNib() {
+		cardView?.borderTopColor = CardCollectionViewItem.normalBorderColor
+	}
+
 	public override var representedObject: Any? {
 		didSet {
 			updateUI()
@@ -17,15 +26,16 @@ internal final class CardCollectionViewItem: NSCollectionViewItem {
 
 	public override var isSelected: Bool {
 		didSet {
-			textField?.textColor = isSelected ? NSColor.red : NSColor.textColor
+			cardView?.borderTopColor = isSelected ? CardCollectionViewItem.selectedBorderColor : CardCollectionViewItem.normalBorderColor
 		}
 	}
 
 	private func updateUI() {
 		guard
-			let estimation = representedObject as? PossibleEstimation
+			let estimation = representedObject as? PossibleEstimation,
+			let cardView = cardView
 			else { return }
 
-		textField?.stringValue = estimation.display
+		cardView.text = estimation.display
 	}
 }

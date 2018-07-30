@@ -6,11 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner">
-            <connections>
-                <outlet property="textField" destination="Ov5-RF-uE6" id="M53-2f-ixF"/>
-            </connections>
-        </customObject>
+        <customObject id="-2" userLabel="File's Owner"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="c22-O7-iKe">
@@ -20,27 +16,17 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="1QX-oM-FXI" customClass="BasicCardView" customModule="Planoker" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
                 </customView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ov5-RF-uE6">
-                    <rect key="frame" x="208" y="118" width="64" height="37"/>
-                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="qfZ-Z7-cpw">
-                        <font key="font" size="26" name=".SFNSDisplay"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
             </subviews>
             <constraints>
                 <constraint firstItem="1QX-oM-FXI" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="93q-am-2p5"/>
-                <constraint firstItem="Ov5-RF-uE6" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="J48-oI-twR"/>
                 <constraint firstAttribute="bottom" secondItem="1QX-oM-FXI" secondAttribute="bottom" id="LG3-Wt-BTB"/>
-                <constraint firstItem="Ov5-RF-uE6" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Sbm-6s-SE8"/>
                 <constraint firstItem="1QX-oM-FXI" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="bni-On-peS"/>
                 <constraint firstAttribute="trailing" secondItem="1QX-oM-FXI" secondAttribute="trailing" id="vHD-EQ-Zdg"/>
             </constraints>
         </customView>
         <collectionViewItem id="rRz-ue-TA3" customClass="CardCollectionViewItem" customModule="Planoker" customModuleProvider="target">
             <connections>
-                <outlet property="textField" destination="Ov5-RF-uE6" id="XFH-H9-Xux"/>
+                <outlet property="cardView" destination="1QX-oM-FXI" id="aCR-9j-dle"/>
                 <outlet property="view" destination="c22-O7-iKe" id="xIG-hU-6P3"/>
             </connections>
         </collectionViewItem>
