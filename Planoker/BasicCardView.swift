@@ -60,13 +60,13 @@ private func attributedString(from layer: CATextLayer) -> NSAttributedString {
 
 @IBDesignable
 internal final class BasicCardView: NSView, CALayerDelegate {
-	@IBInspectable public var borderTopColor: NSColor?
-	@IBInspectable public var borderBottomColor: NSColor?
+	@IBInspectable public var borderTopColor: NSColor? { didSet { cardLayer.setNeedsDisplay() }}
+	@IBInspectable public var borderBottomColor: NSColor? { didSet { cardLayer.setNeedsDisplay() }}
 
-	@IBInspectable public var backgroundTopColor: NSColor?
-	@IBInspectable public var backgroundBottomColor: NSColor?
+	@IBInspectable public var backgroundTopColor: NSColor? { didSet { cardLayer.setNeedsDisplay() }}
+	@IBInspectable public var backgroundBottomColor: NSColor? { didSet { cardLayer.setNeedsDisplay() }}
 
-	@IBInspectable public var cornerRadius: CGFloat = 5.0
+	@IBInspectable public var cornerRadius: CGFloat = 5.0 { didSet { cardLayer.setNeedsDisplay() }}
 
 	@IBInspectable public var font: NSFont? {
 		didSet {
