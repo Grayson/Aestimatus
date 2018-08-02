@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Planoker
+//  Aestimatus
 //
 //  Created by Grayson Hansard on 7/25/18.
 //  Copyright © 2018 From Concentrate Software. All rights reserved.

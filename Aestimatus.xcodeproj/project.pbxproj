@@ -12,8 +12,6 @@
 		1D766FA521095C950083EF42 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FA421095C950083EF42 /* Document.swift */; };
 		1D766FA721095C9C0083EF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D766FA621095C9C0083EF42 /* Assets.xcassets */; };
 		1D766FAA21095C9C0083EF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D766FA821095C9C0083EF42 /* Main.storyboard */; };
-		1D766FB621095C9C0083EF42 /* PlanokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FB521095C9C0083EF42 /* PlanokerTests.swift */; };
-		1D766FC121095C9C0083EF42 /* PlanokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FC021095C9C0083EF42 /* PlanokerUITests.swift */; };
 		1D766FCF21095F050083EF42 /* DeckSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FCE21095F050083EF42 /* DeckSet.swift */; };
 		1D766FD121095F380083EF42 /* Estimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD021095F380083EF42 /* Estimation.swift */; };
 		1D766FD321095F410083EF42 /* PossibleEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D766FD221095F410083EF42 /* PossibleEstimation.swift */; };
@@ -28,38 +26,14 @@
 		1DA5C9D0210B425E0032EEBE /* DisplayWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C9CF210B425E0032EEBE /* DisplayWindowViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1D766FB221095C9C0083EF42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1D766F9521095C950083EF42 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D766F9C21095C950083EF42;
-			remoteInfo = Planoker;
-		};
-		1D766FBD21095C9C0083EF42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1D766F9521095C950083EF42 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D766F9C21095C950083EF42;
-			remoteInfo = Planoker;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1D766F9D21095C950083EF42 /* Planoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D766F9D21095C950083EF42 /* Aestimatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aestimatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D766FA021095C950083EF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D766FA221095C950083EF42 /* DeckSetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSetCollectionViewController.swift; sourceTree = "<group>"; };
 		1D766FA421095C950083EF42 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		1D766FA621095C9C0083EF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D766FA921095C9C0083EF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D766FAB21095C9C0083EF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D766FAC21095C9C0083EF42 /* Planoker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Planoker.entitlements; sourceTree = "<group>"; };
-		1D766FB121095C9C0083EF42 /* PlanokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D766FB521095C9C0083EF42 /* PlanokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanokerTests.swift; sourceTree = "<group>"; };
-		1D766FB721095C9C0083EF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D766FBC21095C9C0083EF42 /* PlanokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D766FC021095C9C0083EF42 /* PlanokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanokerUITests.swift; sourceTree = "<group>"; };
-		1D766FC221095C9C0083EF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D766FCE21095F050083EF42 /* DeckSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSet.swift; sourceTree = "<group>"; };
 		1D766FD021095F380083EF42 /* Estimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimation.swift; sourceTree = "<group>"; };
 		1D766FD221095F410083EF42 /* PossibleEstimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleEstimation.swift; sourceTree = "<group>"; };
@@ -67,6 +41,7 @@
 		1D766FD6210962D90083EF42 /* EstimationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimationSession.swift; sourceTree = "<group>"; };
 		1D9002FD210DF949000E9782 /* BasicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCardView.swift; sourceTree = "<group>"; };
 		1D90030121127989000E9782 /* BasicCardRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCardRenderer.swift; sourceTree = "<group>"; };
+		1D90030321132719000E9782 /* Aestimatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Aestimatus.entitlements; sourceTree = "<group>"; };
 		1DA5C9C7210AAB210032EEBE /* DeckSetCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSetCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		1DA5C9C9210AAB2E0032EEBE /* DeckSetCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSetCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		1DA5C9CB210AAE2C0032EEBE /* CardCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewItem.swift; sourceTree = "<group>"; };
@@ -83,29 +58,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D766FAE21095C9C0083EF42 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D766FB921095C9C0083EF42 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1D766F9421095C940083EF42 = {
 			isa = PBXGroup;
 			children = (
-				1D766F9F21095C950083EF42 /* Planoker */,
-				1D766FB421095C9C0083EF42 /* PlanokerTests */,
-				1D766FBF21095C9C0083EF42 /* PlanokerUITests */,
+				1D766F9F21095C950083EF42 /* Aestimatus */,
 				1D766F9E21095C950083EF42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,14 +72,12 @@
 		1D766F9E21095C950083EF42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D766F9D21095C950083EF42 /* Planoker.app */,
-				1D766FB121095C9C0083EF42 /* PlanokerTests.xctest */,
-				1D766FBC21095C9C0083EF42 /* PlanokerUITests.xctest */,
+				1D766F9D21095C950083EF42 /* Aestimatus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1D766F9F21095C950083EF42 /* Planoker */ = {
+		1D766F9F21095C950083EF42 /* Aestimatus */ = {
 			isa = PBXGroup;
 			children = (
 				1D766FA021095C950083EF42 /* AppDelegate.swift */,
@@ -129,7 +86,7 @@
 				1D766FA621095C9C0083EF42 /* Assets.xcassets */,
 				1D766FA821095C9C0083EF42 /* Main.storyboard */,
 				1D766FAB21095C9C0083EF42 /* Info.plist */,
-				1D766FAC21095C9C0083EF42 /* Planoker.entitlements */,
+				1D90030321132719000E9782 /* Aestimatus.entitlements */,
 				1D766FCE21095F050083EF42 /* DeckSet.swift */,
 				1D766FD021095F380083EF42 /* Estimation.swift */,
 				1D766FD221095F410083EF42 /* PossibleEstimation.swift */,
@@ -144,33 +101,15 @@
 				1D9002FD210DF949000E9782 /* BasicCardView.swift */,
 				1D90030121127989000E9782 /* BasicCardRenderer.swift */,
 			);
-			path = Planoker;
-			sourceTree = "<group>";
-		};
-		1D766FB421095C9C0083EF42 /* PlanokerTests */ = {
-			isa = PBXGroup;
-			children = (
-				1D766FB521095C9C0083EF42 /* PlanokerTests.swift */,
-				1D766FB721095C9C0083EF42 /* Info.plist */,
-			);
-			path = PlanokerTests;
-			sourceTree = "<group>";
-		};
-		1D766FBF21095C9C0083EF42 /* PlanokerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1D766FC021095C9C0083EF42 /* PlanokerUITests.swift */,
-				1D766FC221095C9C0083EF42 /* Info.plist */,
-			);
-			path = PlanokerUITests;
+			path = Aestimatus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D766F9C21095C950083EF42 /* Planoker */ = {
+		1D766F9C21095C950083EF42 /* Aestimatus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D766FC521095C9C0083EF42 /* Build configuration list for PBXNativeTarget "Planoker" */;
+			buildConfigurationList = 1D766FC521095C9C0083EF42 /* Build configuration list for PBXNativeTarget "Aestimatus" */;
 			buildPhases = (
 				1D766F9921095C950083EF42 /* Sources */,
 				1D766F9A21095C950083EF42 /* Frameworks */,
@@ -180,46 +119,10 @@
 			);
 			dependencies = (
 			);
-			name = Planoker;
+			name = Aestimatus;
 			productName = Planoker;
-			productReference = 1D766F9D21095C950083EF42 /* Planoker.app */;
+			productReference = 1D766F9D21095C950083EF42 /* Aestimatus.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1D766FB021095C9C0083EF42 /* PlanokerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D766FC821095C9C0083EF42 /* Build configuration list for PBXNativeTarget "PlanokerTests" */;
-			buildPhases = (
-				1D766FAD21095C9C0083EF42 /* Sources */,
-				1D766FAE21095C9C0083EF42 /* Frameworks */,
-				1D766FAF21095C9C0083EF42 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1D766FB321095C9C0083EF42 /* PBXTargetDependency */,
-			);
-			name = PlanokerTests;
-			productName = PlanokerTests;
-			productReference = 1D766FB121095C9C0083EF42 /* PlanokerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1D766FBB21095C9C0083EF42 /* PlanokerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D766FCB21095C9C0083EF42 /* Build configuration list for PBXNativeTarget "PlanokerUITests" */;
-			buildPhases = (
-				1D766FB821095C9C0083EF42 /* Sources */,
-				1D766FB921095C9C0083EF42 /* Frameworks */,
-				1D766FBA21095C9C0083EF42 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1D766FBE21095C9C0083EF42 /* PBXTargetDependency */,
-			);
-			name = PlanokerUITests;
-			productName = PlanokerUITests;
-			productReference = 1D766FBC21095C9C0083EF42 /* PlanokerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -242,17 +145,9 @@
 							};
 						};
 					};
-					1D766FB021095C9C0083EF42 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 1D766F9C21095C950083EF42;
-					};
-					1D766FBB21095C9C0083EF42 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 1D766F9C21095C950083EF42;
-					};
 				};
 			};
-			buildConfigurationList = 1D766F9821095C950083EF42 /* Build configuration list for PBXProject "Planoker" */;
+			buildConfigurationList = 1D766F9821095C950083EF42 /* Build configuration list for PBXProject "Aestimatus" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -265,9 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D766F9C21095C950083EF42 /* Planoker */,
-				1D766FB021095C9C0083EF42 /* PlanokerTests */,
-				1D766FBB21095C9C0083EF42 /* PlanokerUITests */,
+				1D766F9C21095C950083EF42 /* Aestimatus */,
 			);
 		};
 /* End PBXProject section */
@@ -280,20 +173,6 @@
 				1DA5C9CE210AB3CC0032EEBE /* CardCollectionViewItem.xib in Resources */,
 				1D766FA721095C9C0083EF42 /* Assets.xcassets in Resources */,
 				1D766FAA21095C9C0083EF42 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D766FAF21095C9C0083EF42 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D766FBA21095C9C0083EF42 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,36 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D766FAD21095C9C0083EF42 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D766FB621095C9C0083EF42 /* PlanokerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D766FB821095C9C0083EF42 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D766FC121095C9C0083EF42 /* PlanokerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1D766FB321095C9C0083EF42 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D766F9C21095C950083EF42 /* Planoker */;
-			targetProxy = 1D766FB221095C9C0083EF42 /* PBXContainerItemProxy */;
-		};
-		1D766FBE21095C9C0083EF42 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D766F9C21095C950083EF42 /* Planoker */;
-			targetProxy = 1D766FBD21095C9C0083EF42 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1D766FA821095C9C0083EF42 /* Main.storyboard */ = {
@@ -483,16 +333,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Planoker/Planoker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Aestimatus/Aestimatus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S8Z8N96C99;
-				INFOPLIST_FILE = Planoker/Info.plist;
+				INFOPLIST_FILE = Aestimatus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.Planoker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.aestimatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -502,107 +352,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Planoker/Planoker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Aestimatus/Aestimatus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S8Z8N96C99;
-				INFOPLIST_FILE = Planoker/Info.plist;
+				INFOPLIST_FILE = Aestimatus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.Planoker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.aestimatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		1D766FC921095C9C0083EF42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S8Z8N96C99;
-				INFOPLIST_FILE = PlanokerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.PlanokerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planoker.app/Contents/MacOS/Planoker";
-			};
-			name = Debug;
-		};
-		1D766FCA21095C9C0083EF42 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S8Z8N96C99;
-				INFOPLIST_FILE = PlanokerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.PlanokerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planoker.app/Contents/MacOS/Planoker";
-			};
-			name = Release;
-		};
-		1D766FCC21095C9C0083EF42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S8Z8N96C99;
-				INFOPLIST_FILE = PlanokerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.PlanokerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = Planoker;
-			};
-			name = Debug;
-		};
-		1D766FCD21095C9C0083EF42 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S8Z8N96C99;
-				INFOPLIST_FILE = PlanokerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.PlanokerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = Planoker;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D766F9821095C950083EF42 /* Build configuration list for PBXProject "Planoker" */ = {
+		1D766F9821095C950083EF42 /* Build configuration list for PBXProject "Aestimatus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D766FC321095C9C0083EF42 /* Debug */,
@@ -611,29 +379,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D766FC521095C9C0083EF42 /* Build configuration list for PBXNativeTarget "Planoker" */ = {
+		1D766FC521095C9C0083EF42 /* Build configuration list for PBXNativeTarget "Aestimatus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D766FC621095C9C0083EF42 /* Debug */,
 				1D766FC721095C9C0083EF42 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1D766FC821095C9C0083EF42 /* Build configuration list for PBXNativeTarget "PlanokerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D766FC921095C9C0083EF42 /* Debug */,
-				1D766FCA21095C9C0083EF42 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1D766FCB21095C9C0083EF42 /* Build configuration list for PBXNativeTarget "PlanokerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D766FCC21095C9C0083EF42 /* Debug */,
-				1D766FCD21095C9C0083EF42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

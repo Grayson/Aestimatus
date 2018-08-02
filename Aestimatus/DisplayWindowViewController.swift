@@ -1,6 +1,6 @@
 //
 //  DisplayWindowViewController.swift
-//  Planoker
+//  Aestimatus
 //
 //  Created by Grayson Hansard on 7/27/18.
 //  Copyright © 2018 From Concentrate Software. All rights reserved.
@@ -75,7 +75,7 @@ internal final class DisplayWindowViewController: NSViewController {
 			let layer = CALayer()
 			layer.shadowColor = NSColor.black.cgColor
 			layer.shadowOffset = CGSize(width: 0.0, height: -4.0)
-			layer.shadowRadius = 2.0
+			layer.shadowRadius = 5.0
 			layer.shadowOpacity = 0.5
 			hostView.layer = layer
 
