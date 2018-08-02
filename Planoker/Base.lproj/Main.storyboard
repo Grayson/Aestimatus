@@ -762,13 +762,26 @@ Gw
                                     <action selector="hide:" target="5gI-5U-AMq" id="amh-AI-HuL"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="REP-lO-GmU">
+                                <rect key="frame" x="18" y="22" width="100" height="18"/>
+                                <buttonCell key="cell" type="check" title="Toggle video" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="eSE-v2-Q6I">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="toggleVideo:" target="5gI-5U-AMq" id="89U-N5-KA5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="A5l-is-lkG" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="2a4-la-jeW"/>
+                            <constraint firstItem="REP-lO-GmU" firstAttribute="top" secondItem="A5l-is-lkG" secondAttribute="bottom" constant="23" id="AJB-ND-RXU"/>
                             <constraint firstAttribute="trailing" secondItem="0CA-fM-UVp" secondAttribute="trailing" constant="20" id="KJX-6v-gRl"/>
                             <constraint firstItem="NbB-HY-hXq" firstAttribute="top" secondItem="A5l-is-lkG" secondAttribute="bottom" constant="20" id="N3v-cb-dVs"/>
                             <constraint firstAttribute="bottom" secondItem="0CA-fM-UVp" secondAttribute="bottom" constant="20" id="P41-LL-xCA"/>
                             <constraint firstItem="0CA-fM-UVp" firstAttribute="top" secondItem="A5l-is-lkG" secondAttribute="bottom" constant="20" id="Rmz-4m-VQm"/>
+                            <constraint firstAttribute="bottom" secondItem="REP-lO-GmU" secondAttribute="bottom" constant="24" id="Uh5-XK-lOw"/>
+                            <constraint firstItem="REP-lO-GmU" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="20" id="Wg4-kf-M89"/>
                             <constraint firstItem="0CA-fM-UVp" firstAttribute="leading" secondItem="NbB-HY-hXq" secondAttribute="trailing" constant="12" id="bOn-vv-h17"/>
                             <constraint firstItem="A5l-is-lkG" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="e3Z-UC-tHY"/>
                             <constraint firstAttribute="bottom" secondItem="NbB-HY-hXq" secondAttribute="bottom" constant="20" id="ldH-eQ-4oG"/>
@@ -812,6 +825,9 @@ Gw
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="a9D-WH-WfG">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Em1-Nl-tGh">
                                 <rect key="frame" x="20" y="154" width="163" height="96"/>
                                 <constraints>
@@ -823,11 +839,16 @@ Gw
                             </customView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="a9D-WH-WfG" firstAttribute="top" secondItem="U1S-1P-hHZ" secondAttribute="top" id="SSi-aN-4I0"/>
+                            <constraint firstAttribute="bottom" secondItem="a9D-WH-WfG" secondAttribute="bottom" id="Uyo-rm-8OD"/>
                             <constraint firstItem="Em1-Nl-tGh" firstAttribute="top" secondItem="U1S-1P-hHZ" secondAttribute="top" constant="20" id="ZQj-5Q-GuP"/>
                             <constraint firstItem="Em1-Nl-tGh" firstAttribute="leading" secondItem="U1S-1P-hHZ" secondAttribute="leading" constant="20" id="lzy-aK-QTa"/>
+                            <constraint firstAttribute="trailing" secondItem="a9D-WH-WfG" secondAttribute="trailing" id="uwR-lE-tA6"/>
+                            <constraint firstItem="a9D-WH-WfG" firstAttribute="leading" secondItem="U1S-1P-hHZ" secondAttribute="leading" id="xqe-R9-yel"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="stageBackgroundView" destination="a9D-WH-WfG" id="qNx-oz-YIX"/>
                         <outlet property="videoHostView" destination="Em1-Nl-tGh" id="2Xb-DK-szI"/>
                     </connections>
                 </viewController>
